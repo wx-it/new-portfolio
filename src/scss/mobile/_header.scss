@@ -29,7 +29,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 15px;
+            gap: 7px;
+        }
+
+        .twitter{
+            img{
+                &:first-child{
+                    width: 15px;
+                    height: 12.19px;
+                }
+
+                &:last-child{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+
+        .github{
+            img{
+                &:first-child{
+                    width: 15px;
+                    height: 14.64px;
+                }
+                &:last-child{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
         }
     }
 }
