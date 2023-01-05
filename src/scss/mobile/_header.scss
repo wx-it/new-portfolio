@@ -1,0 +1,35 @@
+@use "../utils/" as u;
+
+.header{
+    padding: 4rem 0;
+
+    h1{
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        color: u.$grayText;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+    }
+
+    .links{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 2rem;
+        color: white;
+        margin: 2rem 0;
+        font-size: 14px;
+        font-weight: 500;
+
+        .twitter, .github{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+}
