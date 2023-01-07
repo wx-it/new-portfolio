@@ -7,19 +7,14 @@
         align-items: center;
     }
 
-    .tablist{
-        @include u.breakpoints(desktop){
-            border: 1px red solid;
-         
-        }
-    }
-
-    .tabPanel{
+    .right{
         display: none;
         visibility: hidden;
         @include u.breakpoints(desktop){
             display: block;
             visibility: visible;
+            max-width: 100%;
+
         }
 
     }

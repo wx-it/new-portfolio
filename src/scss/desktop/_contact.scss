@@ -1,6 +1,8 @@
 @use "../utils/" as u;
 
 .contact{
+
+
     h2:first-child{
         @include u.breakpoints(desktop){
             display: none;

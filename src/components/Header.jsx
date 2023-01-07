@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <>
 <Tabs  className='container' >
-<div>
+<div className="left" >
 <div className='header'>
         <h1>Hi, I'm Zineb Bendjafer</h1>
         <p>
@@ -76,7 +76,7 @@ const Header = () => {
 </div>
 
 
-<TabPanel className="tabPanel">
+<TabPanel className="right">
       <Projects />
     </TabPanel>
     <TabPanel>
