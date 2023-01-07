@@ -28,6 +28,9 @@ function App() {
             <Projects />
             <Contact />
           </div>
+          <p className="copyright">
+          Copyright ©2023 All rights reserved | Created by Zineb.B
+          </p>
           </div>
       )
      }
