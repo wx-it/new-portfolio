@@ -4,6 +4,7 @@ import WhiteLink from "../assets/white-link.svg"
 
 const Header = () => {
   return (
+    <>
     <div className='header'>
         <h1>Hi, I'm Zineb Bendjafer</h1>
         <p>
@@ -33,6 +34,39 @@ const Header = () => {
             </div>
         </div>
     </div>
+
+<nav>
+<div className='tab'>
+    <span>01</span>
+    <span className='line'></span>
+    <a href="">PROJECTS</a>
+</div>
+
+<div className='tab'>
+    <span>02</span>
+    <span className='line'></span>
+    <a href="">CONTACT</a>
+</div>
+</nav>
+
+<div className='links desktop-links'>
+            <div className="twitter">
+                <img src={TwitterIcon} alt="" />
+                <span>Twitter</span>
+                <a href="">
+                    <img src={WhiteLink} alt="" />
+                </a>
+            </div>
+
+            <div className="github">
+                <img src={GitHubIcon} alt="" />
+                <span>GitHub</span>
+                <a href="">
+                    <img src={WhiteLink} alt="" />
+                </a>
+            </div>
+        </div>
+    </>
   )
 }
 

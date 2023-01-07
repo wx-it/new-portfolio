@@ -3,13 +3,12 @@
 .container{
     @include u.breakpoints(desktop){
         display: flex;
-        justify-content: space-between;
-        gap: 5rem;
+        justify-content: space-evenly;
+        align-items: flex-start;
     }
 
     .tabs{
         @include u.breakpoints(desktop){
-            border: 1px green solid;
         }
     }
 }
