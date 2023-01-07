@@ -14,16 +14,48 @@ nav{
         .tab{
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 10px;
+            transition: all 0.5s ease;
             
             span{
                 color: white;
+                font-weight: 700;
                 font-size: 12px;
+                letter-spacing: 0.03em;
+                color: u.$grayText;
+            transition: all 0.5s ease;
+
             }
 
             .line{
-                border-top: 1px white solid;
+                border-top: 1px u.$grayText solid;
                 width: 50px;
+            transition: all 0.5s ease;
+
+            }
+
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                letter-spacing: 0.17em;
+                color: u.$grayText;
+            transition: all 0.5s ease;
+
+            }
+
+            &:hover, &:focus{
+                a{
+                    font-size: 20px;
+                    color: white;
+                }
+                span{
+                    color: white;
+                    font-size: 16px;
+                }
+
+                .line{
+                    border-color: white;
+                }
             }
         }
     }

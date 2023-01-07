@@ -1,5 +1,24 @@
 @use "../utils/" as u;
 
+.header{
+    @include u.breakpoints(desktop){
+        max-width: 530px;
+    }
+
+    h1{
+        @include u.breakpoints(desktop){
+         font-size: 48px;
+        }   
+    }
+
+    p{
+        @include u.breakpoints(desktop){
+            font-size: 20px;
+        }
+    }
+}
+
+
 .links{
     @include u.breakpoints(desktop){
         visibility: hidden;

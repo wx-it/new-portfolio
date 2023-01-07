@@ -4,13 +4,13 @@ const DesktopNav = () => {
   return (
     <nav>
         <div className='tab'>
-            <span>1</span>
+            <span>01</span>
             <span className='line'></span>
             <a href="">PROJECTS</a>
         </div>
         
         <div className='tab'>
-            <span>2</span>
+            <span>02</span>
             <span className='line'></span>
             <a href="">CONTACT</a>
         </div>
