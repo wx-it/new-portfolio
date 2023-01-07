@@ -4,11 +4,13 @@
     @include u.breakpoints(desktop){
         display: flex;
         justify-content: space-evenly;
-        align-items: flex-start;
+        align-items: center;
     }
 
-    .tabs{
+    .tablist{
         @include u.breakpoints(desktop){
+            border: 1px red solid;
+         
         }
     }
 }

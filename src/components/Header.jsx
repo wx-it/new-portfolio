@@ -1,11 +1,16 @@
 import TwitterIcon from "../assets/twitter.svg"
 import GitHubIcon from "../assets/github.svg"
 import WhiteLink from "../assets/white-link.svg"
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const Header = () => {
   return (
     <>
-    <div className='header'>
+<Tabs  className='container' >
+<div>
+<div className='header'>
         <h1>Hi, I'm Zineb Bendjafer</h1>
         <p>
         Junior Frontend web Developer with so much passion for learning tech and all the newest technologies, 
@@ -36,17 +41,18 @@ const Header = () => {
     </div>
 
 <nav>
-<div className='tab'>
-    <span>01</span>
-    <span className='line'></span>
-    <a href="">PROJECTS</a>
-</div>
-
-<div className='tab'>
-    <span>02</span>
-    <span className='line'></span>
-    <a href="">CONTACT</a>
-</div>
+<TabList>
+      <Tab className="tab" >
+        <span>01</span>
+        <span className='line'></span>
+        <p>PROJECTS</p>
+      </Tab>
+      <Tab className="tab" >
+        <span>02</span>
+        <span className='line'></span>
+        <p>CONTACT</p>
+      </Tab>
+    </TabList>
 </nav>
 
 <div className='links desktop-links'>
@@ -66,6 +72,20 @@ const Header = () => {
                 </a>
             </div>
         </div>
+
+</div>
+
+
+<TabPanel>
+      <Projects />
+    </TabPanel>
+    <TabPanel>
+      <Contact/>
+    </TabPanel>
+  </Tabs>
+
+
+
     </>
   )
 }

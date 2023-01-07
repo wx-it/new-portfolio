@@ -3,6 +3,8 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Loader from "./components/Loader";
 import { useState, useEffect } from "react";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -20,15 +22,7 @@ function App() {
       loading ? (
         <Loader/>
       ) : (
-        <div className="container">
-          <div className="left">
           <Header />
-          </div>
-          <div className="tabs">
-          <Projects />
-          <Contact />
-          </div>
-        </div>
       )
      }
     </>
