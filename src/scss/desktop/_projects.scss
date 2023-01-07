@@ -3,7 +3,6 @@
 .projects{
 
     @include u.breakpoints(desktop){
-       width: 620px;
     }
     
             h2{
@@ -16,15 +15,10 @@
         .projects--card{
             @include u.breakpoints(desktop){
                 height: 200px;
-                width: 100%;
+                width: 40vw;
             }
 
-            &:hover{
-                @include u.breakpoints(desktop){
-                 transform: scale(1.025);
-                 transition: all 0.7s ease;
-                }
-            }
+
 
             .link{
                 img{

@@ -45,6 +45,10 @@
     }
 
     form{
+
+        @include u.breakpoints(desktop){
+            padding-bottom: 1rem;
+        }
         input{
         @include u.breakpoints(desktop){
             width: 600px;

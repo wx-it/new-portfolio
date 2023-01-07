@@ -8,7 +8,7 @@ import Contact from "./Contact";
 const Header = () => {
   return (
     <>
-<Tabs  className='container' >
+<Tabs  className='container'  onClick={(index)=>{console.log(index)}}>
 <div className="left" >
 <div className='header'>
         <h1>Hi, I'm Zineb Bendjafer</h1>

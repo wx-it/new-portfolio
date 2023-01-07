@@ -43,7 +43,7 @@ nav{
                 font-size: 16px;
                 letter-spacing: 0.17em;
                 color: u.$grayText;
-            transition: all 0.5s ease;
+               transition: all 0.5s ease;
 
             }
 
@@ -51,6 +51,7 @@ nav{
                 p{
                     font-size: 20px;
                     color: white;
+                    border: none;
                 }
                 span{
                     color: white;
