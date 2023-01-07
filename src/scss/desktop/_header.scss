@@ -33,6 +33,10 @@
 }
 .desktop-links{
     visibility: hidden;
+    margin: 0;
+    padding: 0;
+    display: none;
+
     @include u.breakpoints(desktop){
         visibility: visible;
         display: flex;

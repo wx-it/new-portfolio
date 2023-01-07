@@ -22,7 +22,13 @@ function App() {
       loading ? (
         <Loader/>
       ) : (
-          <Header />
+          <div>
+            <Header />
+          <div className="mobile">
+            <Projects />
+            <Contact />
+          </div>
+          </div>
       )
      }
     </>

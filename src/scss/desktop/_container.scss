@@ -13,4 +13,20 @@
          
         }
     }
+
+    .tabPanel{
+        display: none;
+        visibility: hidden;
+        @include u.breakpoints(desktop){
+            display: block;
+            visibility: visible;
+        }
+
+    }
+}
+
+.mobile{
+    @include u.breakpoints(desktop){
+        display: none;
+    }
 }

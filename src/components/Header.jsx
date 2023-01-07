@@ -76,7 +76,7 @@ const Header = () => {
 </div>
 
 
-<TabPanel>
+<TabPanel className="tabPanel">
       <Projects />
     </TabPanel>
     <TabPanel>

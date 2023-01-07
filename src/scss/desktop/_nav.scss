@@ -2,6 +2,9 @@
 
 nav{
     visibility: hidden;
+    display: none;
+    margin: 0;
+    padding: 0;
 
     @include u.breakpoints(desktop){
         visibility: visible;
