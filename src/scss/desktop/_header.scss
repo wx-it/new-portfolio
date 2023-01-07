@@ -1,0 +1,7 @@
+@use "../utils/" as u;
+
+.links{
+    @include u.breakpoints(desktop){
+        visibility: hidden;
+    }
+}

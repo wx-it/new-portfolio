@@ -1,0 +1,15 @@
+@use "../utils/" as u;
+
+.container{
+    @include u.breakpoints(desktop){
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+
+    .tabs{
+        @include u.breakpoints(desktop){
+            border: 1px green solid;
+        }
+    }
+}
