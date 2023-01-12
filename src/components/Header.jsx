@@ -84,13 +84,15 @@ const Header = () => {
 
 </div>
 
-
-<TabPanel className="right">
+<div className="right">
+    <TabPanel>
       <Projects />
     </TabPanel>
+    
     <TabPanel>
       <Contact/>
     </TabPanel>
+</div>
   </Tabs>
 
 

@@ -46,11 +46,12 @@ nav{
 
             }
 
-            &:hover, &:focus, &:active, .active{
+            &:hover{
                 p{
                     font-size: 20px;
                     color: white;
                     border: none;
+                    outline: none;
                 }
                 span{
                     color: white;
@@ -58,7 +59,7 @@ nav{
                 }
 
                 .line{
-                    border-color: white;
+                    border-color: white;   
                 }
             }
         }
@@ -71,6 +72,8 @@ nav{
     gap: 10px;
     transition: all 0.5s ease;
     cursor: pointer;
+    outline: none;
+
     p{
         font-size: 20px;
         color: white;
