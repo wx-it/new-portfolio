@@ -5,6 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Projects from "./Projects";
 import Contact from "./Contact";
 import { useState } from "react";
+import { CSSTransition, Transition } from "react-transition-group";
 
 const Header = () => {
   const [tabIndex, setTabIndex] = useState(true);
