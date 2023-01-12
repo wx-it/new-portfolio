@@ -4,17 +4,25 @@ import WhiteLink from "../assets/white-link.svg"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Projects from "./Projects";
 import Contact from "./Contact";
+import { useState } from "react";
 
 const Header = () => {
+  const [tabIndex, setTabIndex] = useState(true);
+
+  function toggleTabState(){
+    setTabIndex(tabIndex => !tabIndex)
+    console.log(tabIndex)
+  }
+
   return (
     <>
-<Tabs  className='container'  onClick={(index)=>{console.log(index)}}>
+<Tabs  className='container'  defaultIndex={0}>
 <div className="left" >
 <div className='header'>
         <h1>Hi, I'm Zineb Bendjafer</h1>
         <p>
         Junior Frontend web Developer with so much passion for learning tech and all the newest technologies, 
-        always ready for a challenge and new projects, here to help and her to work. I'm currently working my way towards 
+        always ready for a challenge and new projects, here to help and here to work. I'm currently working my way towards 
         becoming a MERN stack developer. 
         </p>
         <p>
@@ -42,12 +50,12 @@ const Header = () => {
 
 <nav>
 <TabList>
-      <Tab className="tab" >
+      <Tab className={tabIndex ? "active": "tab"} onClick={toggleTabState}>
         <span>01</span>
         <span className='line'></span>
         <p>PROJECTS</p>
       </Tab>
-      <Tab className="tab" >
+      <Tab className={tabIndex ? "tab" : "active"} onClick={toggleTabState} >
         <span>02</span>
         <span className='line'></span>
         <p>CONTACT</p>

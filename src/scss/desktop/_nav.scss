@@ -22,7 +22,6 @@ nav{
             cursor: pointer;
             
             span{
-                color: white;
                 font-weight: 700;
                 font-size: 12px;
                 letter-spacing: 0.03em;
@@ -34,7 +33,7 @@ nav{
             .line{
                 border-top: 1px u.$grayText solid;
                 width: 50px;
-            transition: all 0.5s ease;
+                transition: all 0.5s ease;
 
             }
 
@@ -43,11 +42,11 @@ nav{
                 font-size: 16px;
                 letter-spacing: 0.17em;
                 color: u.$grayText;
-               transition: all 0.5s ease;
+                transition: all 0.5s ease;
 
             }
 
-            &:hover, &:focus, &:active{
+            &:hover, &:focus, &:active, .active{
                 p{
                     font-size: 20px;
                     color: white;
@@ -63,5 +62,35 @@ nav{
                 }
             }
         }
+    }
+}
+
+.active{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    p{
+        font-size: 20px;
+        color: white;
+        border: none;
+        font-weight: 500;
+        letter-spacing: 0.17em;
+        transition: all 0.5s ease;
+    }
+    span{
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        transition: all 0.5s ease;
+
+    }
+
+    .line{
+        border-top: 1px white solid;
+        width: 50px;
+        transition: all 0.5s ease;
     }
 }
