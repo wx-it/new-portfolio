@@ -20,8 +20,9 @@ const Header = () => {
         <div className="left">
           <div className="header">
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={{ y: -50, opacity: 0 }}
               animate={{
+                y: 0,
                 opacity: 1,
                 transition: {
                   duration: 1,
@@ -29,17 +30,35 @@ const Header = () => {
               }}
             >
               <h1>Hi, I'm Zineb Bendjafer</h1>
-              <p>
+              <motion.p
+                initial={{ y: -50, opacity: 0 }}
+                animate={{
+                  y: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 1.5,
+                  },
+                }}
+              >
                 Junior Frontend web Developer with so much passion for learning
                 tech and all the newest technologies, always ready for a
                 challenge and new projects, here to help and here to work. I'm
                 currently working my way towards becoming a MERN stack
                 developer.
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                initial={{ y: -50, opacity: 0 }}
+                animate={{
+                  y: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 1.75,
+                  },
+                }}
+              >
                 Also! I share my journey on both <a href="">Twitter</a> and my
                 personal <a href="">Hashnode</a> blog.
-              </p>
+              </motion.p>
             </motion.div>
 
             <div className="links">
@@ -61,7 +80,16 @@ const Header = () => {
             </div>
           </div>
 
-          <nav>
+          <motion.nav
+            initial={{ x: -50, opacity: 0 }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 2,
+              },
+            }}
+          >
             <TabList>
               <Tab
                 className={tabIndex ? "active" : "tab"}
@@ -80,24 +108,43 @@ const Header = () => {
                 <p>CONTACT</p>
               </Tab>
             </TabList>
-          </nav>
-
+          </motion.nav>
           <div className="links desktop-links">
-            <div className="twitter">
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2.75,
+                },
+              }}
+              className="twitter"
+            >
               <img src={TwitterIcon} alt="" />
               <span>Twitter</span>
               <a href="">
                 <img src={WhiteLink} alt="" />
               </a>
-            </div>
+            </motion.div>
 
-            <div className="github">
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 3,
+                },
+              }}
+              className="github"
+            >
               <img src={GitHubIcon} alt="" />
               <span>GitHub</span>
               <a href="">
                 <img src={WhiteLink} alt="" />
               </a>
-            </div>
+            </motion.div>
           </div>
         </div>
 
