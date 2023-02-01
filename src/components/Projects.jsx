@@ -8,8 +8,14 @@ const Projects = () => {
 
       <div className="projects--cards">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, delay: 0.5 }}
+          initial={{ y: -50, opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: {
+              duration: 2,
+            },
+          }}
           className="projects--card"
         >
           <div className="link">
@@ -23,8 +29,14 @@ const Projects = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, delay: 0.75 }}
+          initial={{ y: -50, opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: {
+              duration: 3,
+            },
+          }}
           className="projects--card"
         >
           <div className="link">
@@ -38,8 +50,14 @@ const Projects = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, delay: 1 }}
+          initial={{ y: -50, opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: {
+              duration: 4,
+            },
+          }}
           className="projects--card"
         >
           <div className="link">

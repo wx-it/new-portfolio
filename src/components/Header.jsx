@@ -5,7 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import { useState } from "react";
-import { CSSTransition, Transition } from "react-transition-group";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [tabIndex, setTabIndex] = useState(true);
@@ -14,23 +14,33 @@ const Header = () => {
     setTabIndex((tabIndex) => !tabIndex);
     console.log(tabIndex);
   }
-
   return (
     <>
       <Tabs className="container" defaultIndex={0}>
         <div className="left">
           <div className="header">
-            <h1>Hi, I'm Zineb Bendjafer</h1>
-            <p>
-              Junior Frontend web Developer with so much passion for learning
-              tech and all the newest technologies, always ready for a challenge
-              and new projects, here to help and here to work. I'm currently
-              working my way towards becoming a MERN stack developer.
-            </p>
-            <p>
-              Also! I share my journey on both <a href="">Twitter</a> and my
-              personal <a href="">Hashnode</a> blog.
-            </p>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                transition: {
+                  duration: 1,
+                },
+              }}
+            >
+              <h1>Hi, I'm Zineb Bendjafer</h1>
+              <p>
+                Junior Frontend web Developer with so much passion for learning
+                tech and all the newest technologies, always ready for a
+                challenge and new projects, here to help and here to work. I'm
+                currently working my way towards becoming a MERN stack
+                developer.
+              </p>
+              <p>
+                Also! I share my journey on both <a href="">Twitter</a> and my
+                personal <a href="">Hashnode</a> blog.
+              </p>
+            </motion.div>
 
             <div className="links">
               <div className="twitter">
