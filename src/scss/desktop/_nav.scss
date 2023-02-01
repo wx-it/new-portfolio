@@ -1,99 +1,95 @@
 @use "../utils/" as u;
 
-nav{
-    visibility: hidden;
-    display: none;
-    margin: 0;
-    padding: 0;
+nav {
+  visibility: hidden;
+  display: none;
+  margin: 0;
+  padding: 0;
 
-    @include u.breakpoints(desktop){
-        visibility: visible;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 1rem;
-        margin-top: 30px;
-        
-        .tab{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.5s ease;
-            cursor: pointer;
-            
-            span{
-                font-weight: 700;
-                font-size: 12px;
-                letter-spacing: 0.03em;
-                color: u.$grayText;
-                transition: all 0.5s ease;
-
-            }
-
-            .line{
-                border-top: 1px u.$grayText solid;
-                width: 50px;
-                transition: all 0.5s ease;
-
-            }
-
-            p{
-                font-weight: 500;
-                font-size: 16px;
-                letter-spacing: 0.17em;
-                color: u.$grayText;
-                transition: all 0.5s ease;
-
-            }
-
-            &:hover{
-                p{
-                    font-size: 20px;
-                    color: white;
-                    border: none;
-                    outline: none;
-                }
-                span{
-                    color: white;
-                    font-size: 16px;
-                }
-
-                .line{
-                    border-color: white;   
-                }
-            }
-        }
-    }
-}
-
-.active{
+  @include u.breakpoints(desktop) {
+    visibility: visible;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    outline: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 30px;
 
-    p{
-        font-size: 20px;
-        color: white;
-        border: none;
-        font-weight: 500;
-        letter-spacing: 0.17em;
-        transition: all 0.5s ease;
-    }
-    span{
-        color: white;
-        font-size: 16px;
+    .tab {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.5s ease;
+      cursor: pointer;
+
+      span {
         font-weight: 700;
+        font-size: 12px;
         letter-spacing: 0.03em;
+        color: u.$grayText;
         transition: all 0.5s ease;
+      }
 
-    }
-
-    .line{
-        border-top: 1px white solid;
+      .line {
+        border-top: 1px u.$grayText solid;
         width: 50px;
         transition: all 0.5s ease;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.17em;
+        color: u.$grayText;
+        transition: all 0.5s ease;
+      }
+
+      &:hover {
+        p {
+          font-size: 20px;
+          color: white;
+          border: none;
+          outline: none;
+        }
+        span {
+          color: white;
+          font-size: 16px;
+        }
+
+        .line {
+          border-color: white;
+        }
+      }
     }
+  }
+}
+
+.active {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  outline: none;
+
+  p {
+    font-size: 20px;
+    color: white;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 0.17em;
+    transition: all 0.5s ease;
+  }
+  span {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    transition: all 0.5s ease;
+  }
+
+  .line {
+    border-top: 1px white solid;
+    width: 50px;
+    transition: all 0.5s ease;
+  }
 }

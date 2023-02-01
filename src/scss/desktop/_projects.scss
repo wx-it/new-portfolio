@@ -1,68 +1,67 @@
 @use "../utils/" as u;
 
-.projects{
+.projects {
+  @include u.breakpoints(desktop) {
+  }
 
-    @include u.breakpoints(desktop){
+  h2 {
+    @include u.breakpoints(desktop) {
+      visibility: hidden;
     }
-    
-            h2{
-                @include u.breakpoints(desktop){
-                 visibility: hidden;       
-                }
-            }
-    
-    .projects--cards{
-        .projects--card{
-            @include u.breakpoints(desktop){
-                height: 200px;
-                width: 40vw;
-                background: linear-gradient(to right, u.$projectsBg, #333333, #424242, u.$projectsBg);
-                background-size: 300% 100%;
-            } 
+  }
 
-        
-            &:hover{
-                background-position: 100% 0;
-                transition: all 0.5s ease;
-              }
+  .projects--cards {
+    .projects--card {
+      @include u.breakpoints(desktop) {
+        height: 200px;
+        width: 40vw;
+        background: linear-gradient(
+          to right,
+          u.$projectsBg,
+          #333333,
+          #424242,
+          u.$projectsBg
+        );
+        background-size: 300% 100%;
+      }
 
+      &:hover {
+        background-position: 100% 0;
+        transition: all 0.5s ease;
+      }
 
-
-            .link{
-                img{
-                    @include u.breakpoints(desktop){
-                        margin-top: 10px;
-                        opacity: 0;
-                        transition: all 0.5s ease; 
-                    }
-                }
-
-                p{
-                    @include u.breakpoints(desktop){
-                        font-size: 20px;
-                    }
-                }
-            }
-
-            &:hover .link img{
-                opacity: 1;
-                margin-top: 0;
-            }
-
-            h2{
-                @include u.breakpoints(desktop){
-                 font-size: 48px;   
-                 visibility: visible;
-                }
-
-            }
-            p{
-                @include u.breakpoints(desktop){
-                    font-size: 20px;
-                }
-            }
-
-
+      .link {
+        img {
+          @include u.breakpoints(desktop) {
+            margin-top: 10px;
+            opacity: 0;
+            transition: all 0.5s ease;
+          }
         }
+
+        p {
+          @include u.breakpoints(desktop) {
+            font-size: 20px;
+          }
+        }
+      }
+
+      &:hover .link img {
+        opacity: 1;
+        margin-top: 0;
+      }
+
+      h2 {
+        @include u.breakpoints(desktop) {
+          font-size: 48px;
+          visibility: visible;
+        }
+      }
+      p {
+        @include u.breakpoints(desktop) {
+          font-size: 20px;
+        }
+      }
     }
+  }
 }
