@@ -20,12 +20,12 @@ const Projects = () => {
         >
           <div className="link">
             <p>React</p>
-            <a href="">
+            <a target={"_blank"} href="http://news-homepage-wxit.vercel.app/">
               <img src={GrayLink} alt="" />
             </a>
           </div>
-          <h2>Quizzical</h2>
-          <p>a quiz app made with React and quiz API.</p>
+          <h2>News Homepage</h2>
+          <p>a one page news homepage build using Reactjs and CSS</p>
         </motion.div>
 
         <motion.div
