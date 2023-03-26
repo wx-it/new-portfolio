@@ -56,8 +56,18 @@ const Header = () => {
                   },
                 }}
               >
-                Also! I share my journey on both <a href="">Twitter</a> and my
-                personal <a href="">Hashnode</a> blog.
+                Also! I share my journey on both{" "}
+                <a target={"_blank"} href="https://twitter.com/obv_12">
+                  Twitter
+                </a>{" "}
+                and my personal{" "}
+                <a
+                  target={"_blank"}
+                  href="https://my-tech-journey.hashnode.dev/"
+                >
+                  Hashnode
+                </a>{" "}
+                blog.
               </motion.p>
             </motion.div>
 
@@ -123,7 +133,7 @@ const Header = () => {
             >
               <img src={TwitterIcon} alt="" />
               <span>Twitter</span>
-              <a href="">
+              <a target={"_blank"} href="https://twitter.com/obv_12">
                 <img src={WhiteLink} alt="" />
               </a>
             </motion.div>
@@ -141,7 +151,7 @@ const Header = () => {
             >
               <img src={GitHubIcon} alt="" />
               <span>GitHub</span>
-              <a href="">
+              <a target={"_blank"} href="https://github.com/wx-it">
                 <img src={WhiteLink} alt="" />
               </a>
             </motion.div>
