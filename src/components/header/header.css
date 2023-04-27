@@ -4,13 +4,8 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
   color: white;
-  margin-bottom: 5rem;
-}
-
-.header div:first-child{
-  margin-top: 5rem;
+  margin: 1rem 0;
 }
 
 .header div h1{
@@ -47,4 +42,10 @@
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .header div h1{
+    font-size: 40px;
+  }
 }
