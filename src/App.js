@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
 import Services from "./components/services/Services";
+import Projects from "./components/projects/Projects";
 function App() {
   const [loading, setLoading] = useState(false);
 
@@ -18,6 +19,7 @@ function App() {
       <div className="container">
         <Header />
         <Services />
+        <Projects />
       </div>
     </div>
   );
