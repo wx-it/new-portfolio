@@ -1,5 +1,10 @@
 import React from "react";
 import "./header.css";
+import {
+  AiOutlineTwitter,
+  AiFillLinkedin,
+  AiOutlineGithub,
+} from "react-icons/ai";
 
 const Header = () => {
   return (
@@ -20,6 +25,13 @@ const Header = () => {
           tech and all the newest technologies, always ready for a challenge and
           new projects, here to help and here to work.
         </p>
+      </div>
+
+      <div className="links">
+        <AiOutlineTwitter />
+        <AiFillLinkedin />
+        <AiOutlineGithub />
+        <button>Email me</button>
       </div>
     </div>
   );

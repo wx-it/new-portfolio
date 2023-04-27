@@ -8,7 +8,7 @@
   color: white;
 }
 
-.header div{
+.header div:first-child{
   margin-top: 5rem;
 }
 
@@ -20,8 +20,30 @@
 }
 
 .header div p{
-  color: gray;
+  color: rgb(153, 153, 153);
   font-size: 20px;
   line-height: 2.5rem;
   letter-spacing: 0.05rem;
+}
+
+.links{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  font-size: 30px;
+  color: rgb(153, 153, 153);
+}
+
+.links button{
+  background-color: rgb(32, 32, 32);
+  color: white;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
 }
