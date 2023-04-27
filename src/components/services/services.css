@@ -1,3 +1,7 @@
+.services{
+  margin-bottom: 5rem;
+}
+
 .services section {
   display: flex;
   align-items: center;
@@ -40,4 +44,14 @@
   border-radius: 5px;
   padding: 1rem;
   color: white;
+}
+
+.service h3{
+  font-weight: 400;
+}
+
+.service p{
+   color: #bbbbbb;
+   font-size: 15px;
+   letter-spacing: 0.025rem;
 }
