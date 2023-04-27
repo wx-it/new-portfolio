@@ -12,7 +12,6 @@ const Services = () => {
             Proceed.
           </p>
         </div>
-        <button>Get Started</button>
       </section>
 
       <div className="services-cards">

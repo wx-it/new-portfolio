@@ -1,37 +1,33 @@
 .services{
   margin-bottom: 5rem;
+  color: white;
+  border-top: 1px #444444 solid;
+  padding-top: 2rem;
 }
 
 .services section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
 }
 
 .services section div h2 {
   margin: 0;
   font-size: 30px;
+  font-weight: 400;
 }
 
 .services section div p {
-  font-size: 14px;
-  max-width: 350px;
-}
-
-.services section button {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 0.65rem 1.5rem;
-  border-radius: 3px;
-  cursor: pointer;
-  font-family: inherit;
+  color: rgb(153, 153, 153);
+  font-size: 15px;
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
 }
 
 .services-cards {
   display: grid;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
@@ -40,7 +36,7 @@
 }
 
 .service {
-  background-color: black;
+  border: 1px #444444 solid;
   border-radius: 5px;
   padding: 1rem;
   color: white;
