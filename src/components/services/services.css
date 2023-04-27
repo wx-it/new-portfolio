@@ -1,4 +1,4 @@
-.services{
+.services {
   margin-bottom: 5rem;
   color: white;
   border-top: 1px #444444 solid;
@@ -16,13 +16,13 @@
   margin: 0;
   font-size: 30px;
   font-weight: 400;
+  color: rgb(212, 212, 212);
 }
 
 .services section div p {
   color: rgb(153, 153, 153);
   font-size: 15px;
-  line-height: 2.5rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.1rem;
 }
 
 .services-cards {
@@ -42,12 +42,15 @@
   color: white;
 }
 
-.service h3{
+.service h3 {
   font-weight: 400;
+  color: rgb(212, 212, 212);
 }
 
-.service p{
-   color: #bbbbbb;
-   font-size: 15px;
-   letter-spacing: 0.025rem;
+.service p {
+  color: rgb(153, 153, 153);
+  font-size: 15px;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+  margin: 0;
 }
