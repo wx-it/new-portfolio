@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,44 +8,50 @@
   margin: 1rem 0;
 }
 
-.header div h1{
+.header div h1 {
   font-size: 68px;
   font-weight: 500;
   letter-spacing: 0.05rem;
   color: rgb(212, 212, 212);
 }
 
-.header div p{
+.header div p {
   color: rgb(153, 153, 153);
   font-size: 20px;
   line-height: 2.5rem;
   letter-spacing: 0.05rem;
 }
 
-.links{
+.links {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
   gap: 2rem;
+}
+
+.links a {
   font-size: 30px;
   color: rgb(153, 153, 153);
 }
 
-.links button{
+.links button {
   background-color: rgb(32, 32, 32);
-  color: white;
   border-radius: 15px;
   padding: 0.5rem 1rem;
   border: none;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
+}
+.links button a {
+  color: white;
   font-size: 15px;
   font-weight: 500;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .header div h1{
+  .header div h1 {
     font-size: 40px;
   }
 }

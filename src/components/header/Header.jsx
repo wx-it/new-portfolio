@@ -28,10 +28,18 @@ const Header = () => {
       </div>
 
       <div className="links">
-        <AiOutlineTwitter />
-        <AiFillLinkedin />
-        <AiOutlineGithub />
-        <button>Email me</button>
+        <a target="blank" href="https://twitter.com/obv_12">
+          <AiOutlineTwitter />
+        </a>
+        <a target="blank" href="https://www.linkedin.com/in/zineb-bendjafer/">
+          <AiFillLinkedin />
+        </a>
+        <a target="blank" href="https://github.com/wx-it">
+          <AiOutlineGithub />
+        </a>
+        <button>
+          <a href="mailto:bendjafer.zineb70@gmail.com">Email me</a>
+        </button>
       </div>
     </div>
   );
