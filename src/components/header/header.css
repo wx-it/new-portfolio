@@ -36,6 +36,10 @@
   color: rgb(153, 153, 153);
 }
 
+.links a:last-child{
+  font-size: 15px;
+}
+
 .links button {
   background-color: rgb(32, 32, 32);
   border-radius: 15px;
