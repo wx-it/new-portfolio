@@ -55,7 +55,7 @@ const Header = () => {
           <a href="mailto:bendjafer.zineb70@gmail.com">Email me</a>
         </button>
 
-        <a href="/pdf/Resume.pdf" target="blank">
+        <a href="/pdf/resume.pdf" target="blank">
           Resume
         </a>
       </div>
