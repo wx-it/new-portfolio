@@ -59,4 +59,8 @@
   .header div h1 {
     font-size: 40px;
   }
+
+  .links{
+    flex-wrap: wrap;
+  }
 }
