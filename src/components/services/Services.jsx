@@ -7,10 +7,7 @@ const Services = () => {
       <section>
         <div>
           <h2>My Services</h2>
-          <p>
-            Check Out All Services below then Click the Get Started Button to
-            Proceed.
-          </p>
+          <p>Check Out some of my Services below and let's get started!</p>
         </div>
       </section>
 
@@ -31,11 +28,35 @@ const Services = () => {
           </p>
         </div>
         <div className="service">
-          <h3>Front-end development</h3>
+          <h3>User experience (UX) design</h3>
           <p>
-            Writing the HTML, CSS, and JavaScript / Reactjs code that makes up
-            the front end of a website, ensuring that it's functional, fast, and
-            user-friendly.
+            Designing websites that provide an exceptional user experience,
+            including intuitive navigation, clear calls-to-action, and fast
+            loading times.
+          </p>
+        </div>
+
+        <div className="service">
+          <h3>Maintenance and updates</h3>
+          <p>
+            Provide ongoing maintenance and updates for websites, ensuring that
+            they remain secure, up-to-date, and fully functional.
+          </p>
+        </div>
+
+        <div className="service">
+          <h3>Performance optimization</h3>
+          <p>
+            Optimize websites for speed and performance, ensuring that they load
+            quickly and efficiently for users.
+          </p>
+        </div>
+
+        <div className="service">
+          <h3>Search engine optimization</h3>
+          <p>
+            Optimizing websites for search engines so that they appear higher in
+            search results and drive more traffic to your sites.
           </p>
         </div>
       </div>

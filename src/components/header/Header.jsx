@@ -10,7 +10,9 @@ const Header = () => {
   return (
     <div className="header">
       <div>
-        <h1>My name is Zineb, I help startups build their website. </h1>
+        <h1>
+          Creative Web Developer crafting beautiful and functional websites.
+        </h1>
         <p>
           Hey there! 👋 I'm Zineb, a passionate web developer with a focus on
           front-end development. I specialize in using HTML, CSS, and JavaScript
