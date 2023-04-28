@@ -6,6 +6,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <h2>Featured Projects</h2>
+      <a target="blank" href="https://github.com/wx-it/movie-app">
         <div className="project">
           <div>
             <BiCameraMovie />
@@ -22,6 +23,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+      </a>
     </div>
   );
 };
