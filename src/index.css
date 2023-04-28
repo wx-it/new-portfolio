@@ -18,6 +18,13 @@ body{
     min-height: 100vh;
 }
 
+footer{
+    color: #808080;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: .5rem;
+}
+
 @media only screen and (max-width: 1300px) {
     .container{
         padding: 0 2rem;

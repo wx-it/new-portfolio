@@ -14,11 +14,14 @@ function App() {
 
   return (
     <div>
-      <div className="container">
-        <Header />
-        <Services />
-        <Projects />
-      </div>
+      <main>
+        <div className="container">
+          <Header />
+          <Services />
+          <Projects />
+        </div>
+      </main>
+      <footer>© Zineb Bendjafer. All rights reserved.</footer>
     </div>
   );
 }
