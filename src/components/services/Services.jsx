@@ -28,7 +28,7 @@ const Services = () => {
           </p>
         </div>
         <div className="service">
-          <h3>User experience (UX) design</h3>
+          <h3>User experience design</h3>
           <p>
             Designing websites that provide an exceptional user experience,
             including intuitive navigation, clear calls-to-action, and fast
