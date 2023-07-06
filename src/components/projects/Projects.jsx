@@ -1,6 +1,5 @@
 import "./projects.css";
-import { BiCameraMovie } from "react-icons/bi";
-import { AiOutlineGithub } from "react-icons/ai";
+import { BiCameraMovie, BiBookmarkAlt } from "react-icons/bi";
 
 const Projects = () => {
   return (
@@ -20,6 +19,22 @@ const Projects = () => {
             <div>
               <span>ReactJS</span>
               <span>CSS</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a target="blank" href="https://explora-life.vercel.app/">
+        <div className="project">
+          <div>
+            <BiBookmarkAlt />
+          </div>
+          <div>
+            <h3>ExploraLife</h3>
+            <p>ExploraLife is a landing page built for an online magazine</p>
+            <div>
+              <span>ReactTS</span>
+              <span>TailwindCSS</span>
             </div>
           </div>
         </div>
